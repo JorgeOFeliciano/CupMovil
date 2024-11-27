@@ -15,7 +15,7 @@
         android:id="@+id/nosotros"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="32dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         <!-- nosotros -->
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="230dp"
+            android:layout_height="285dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
             android:background="@drawable/fondo_nosotros"
@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="Nosotros"
+                android:text="@string/nosotros_titulo"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:textStyle="bold"/>
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:gravity="center"
-                android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..."
+                android:text="@string/nosotros_descripcion"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"/>
         </LinearLayout>
@@ -60,9 +60,8 @@
         android:id="@+id/contenedorMisionyVision"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="32dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/nosotros"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
@@ -70,7 +69,7 @@
         <!-- Misión -->
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="300dp"
+            android:layout_height="350dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
             android:background="@drawable/fondo_mision"
@@ -81,7 +80,7 @@
                 android:id="@+id/misionTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MISIÓN"
+                android:text="@string/mision_titulo"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -91,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit..."
+                android:text="@string/mision_descripcion"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -110,7 +109,7 @@
                 android:id="@+id/visionTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="VISIÓN"
+                android:text="@string/vision_titulo"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -120,7 +119,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit..."
+                android:text="@string/vision_descripcion"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
         </LinearLayout>
