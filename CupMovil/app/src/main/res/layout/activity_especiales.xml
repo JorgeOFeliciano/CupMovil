@@ -171,7 +171,7 @@
         <ScrollView
             android:id="@+id/ofertas_scrollVIew"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="260dp"
             app:layout_constraintTop_toBottomOf="@+id/menu_ofertas_texto">
 
             <HorizontalScrollView
@@ -192,6 +192,25 @@
                     tools:listitem="@layout/card_producto1"/>
             </HorizontalScrollView>
 
+            <HorizontalScrollView
+                android:id="@+id/scroll_ofertas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_ofertas2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@+id/ofertas_scrollVIew"
+                    tools:layout_editor_absoluteX="10dp"
+                    tools:listitem="@layout/card_producto1"/>
+            </HorizontalScrollView>
+
+
         </ScrollView>
 
         <!-- Menú flotante con submenús -->
@@ -200,9 +219,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_margin="16dp"
+            android:layout_margin="1dp"
             android:padding="10dp"
-            android:gravity="end"
+            android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
