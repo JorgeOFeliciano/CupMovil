@@ -16,7 +16,7 @@
             android:name=".Especiales"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Nosotros"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
