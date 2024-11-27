@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_coffee"
-    tools:context=".ProfileActivity">
+    tools:context=".Perfil">
 
     <!-- Menú Hamburger -->
     <ImageView
@@ -32,6 +31,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Imagen de perfil -->
+<<<<<<< HEAD
+=======
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profile_imagen"
+        android:contentDescription="Profile Image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+>>>>>>> 14b7fd4a89d2988fc0ec89eeab53c5c8cca02f21
 
     <!-- Nombre del usuario -->
     <ImageView

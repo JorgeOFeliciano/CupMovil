@@ -8,6 +8,7 @@
     tools:context=".Especiales">
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="375dp"
         tools:ignore="MissingConstraints">
@@ -25,8 +26,8 @@
     </FrameLayout>
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp"
@@ -67,19 +68,19 @@
 
         <EditText
             android:id="@+id/buscar_especial"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
-            app:tint="@color/white"
             android:drawableStart="@drawable/baseline_search_24"
             android:drawablePadding="8dp"
             android:hint="Buscar"
-            android:textColorHint="#cccccc"
             android:padding="12dp"
+            android:textColorHint="#cccccc"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/menu_especial"/>
+            app:layout_constraintTop_toBottomOf="@+id/menu_especial"
+            app:tint="@color/white" />
 
         <HorizontalScrollView
             android:id="@+id/horizontalScrollView"
@@ -128,20 +129,72 @@
         </HorizontalScrollView>
 
         <TextView
+            android:id="@+id/menu_popular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/menu_especial5"
             android:textColor="#ffffff"
-            android:textStyle="bold"
             android:textSize="32dp"
+            android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
-            tools:layout_editor_absoluteX="15dp"/>
+            tools:layout_editor_absoluteX="15dp" />
 
+        <HorizontalScrollView
+            android:id="@+id/rv_artesanias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/menu_popular">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/menu_popular"
+                tools:layout_editor_absoluteX="10dp"
+                tools:listitem="@layout/card_producto1"/>
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/menu_ofertas_texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_especial6"
+            android:textColor="#000000"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/rv_artesanias"
+            tools:layout_editor_absoluteX="15dp" />
+
+        <ScrollView
+            android:id="@+id/ofertas_scrollVIew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/menu_ofertas_texto">
+
+            <HorizontalScrollView
+                android:id="@+id/scroll_ofertas1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_ofertas1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@+id/ofertas_scrollVIew"
+                    tools:layout_editor_absoluteX="10dp"
+                    tools:listitem="@layout/card_producto1"/>
+            </HorizontalScrollView>
+
+        </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
