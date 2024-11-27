@@ -53,6 +53,10 @@
                 android:src="@drawable/baseline_local_grocery_store_24"
                 app:tint="@color/white" />
         </TableRow>
+        <TableRow>
+
+            <
+        </TableRow>
     </TableLayout>
 
 
