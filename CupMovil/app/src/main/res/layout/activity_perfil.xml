@@ -5,32 +5,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_coffee"
-    tools:context=".ProfileActivity">
+    tools:context=".Perfil">
 
-    <!-- Menú Hamburger -->
-    <ImageView
-        android:id="@+id/baseline_menu_24"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="Menu Icon"
-        android:src="@drawable/baseline_menu_24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Icono del carrito -->
-    <ImageView
-        android:id="@+id/baseline_local_grocery_store_24"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="Cart Icon"
-        android:src="@drawable/baseline_local_grocery_store_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo_especiales" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000" />
+    </FrameLayout>
+
+
 
     <!-- Imagen de perfil -->
     <ImageView
@@ -40,9 +36,9 @@
         android:layout_marginTop="32dp"
         android:src="@drawable/profile_imagen"
         android:contentDescription="Profile Image"
-        app:layout_constraintTop_toBottomOf="@id/menuIcon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <!-- Nombre del usuario -->
     <TextView

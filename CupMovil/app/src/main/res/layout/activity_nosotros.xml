@@ -6,24 +6,105 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D7B898"
     tools:context=".Nosotros">
 
 
+    <!-- Sección Nosotros -->
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/nosotrosTitle"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="147dp"
-        tools:text="Nosotros" />
+        android:text="Nosotros"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="258dp"
-        android:layout_height="369dp"
-        app:srcCompat="@drawable/fondo_especiales"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="124dp" />
+    <TextView
+        android:id="@+id/nosotrosDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..."
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/nosotrosTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
+    <!-- Sección Misión y Visión -->
+    <LinearLayout
+        android:id="@+id/missionVisionContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/nosotrosDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Misión -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/fondo_mision"
+            android:padding="16dp"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/misionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MISIÓN"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/misionDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit..."
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Visión -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/fondo_vision"
+            android:padding="16dp"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/visionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VISIÓN"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/visionDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit..."
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
