@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CupMovil</string>
+
+    //Especiaes
+    <string name="menu_especial1">Cafe</string>
+    <string name="menu_especial2">Bebidas</string>
 </resources>
