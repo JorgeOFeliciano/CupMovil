@@ -139,16 +139,24 @@
             app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
             tools:layout_editor_absoluteX="15dp" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <HorizontalScrollView
             android:id="@+id/rv_artesanias"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:orientation="horizontal"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintTop_toBottomOf="@+id/menu_popular"
-            tools:layout_editor_absoluteX="10dp"
-            tools:listitem="@layout/card_producto1"/>
+            app:layout_constraintTop_toBottomOf="@+id/menu_popular">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/menu_popular"
+                tools:layout_editor_absoluteX="10dp"
+                tools:listitem="@layout/card_producto1"/>
+
+        </HorizontalScrollView>
+
 
         <TextView
             android:id="@+id/menu_ofertas_texto"
@@ -161,37 +169,32 @@
             app:layout_constraintTop_toBottomOf="@+id/rv_artesanias"
             tools:layout_editor_absoluteX="15dp" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_ofertas1"
-            android:layout_width="match_parent"
+        <ScrollView
+            android:id="@+id/ofertas_scrollVIew"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:orientation="horizontal"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintTop_toBottomOf="@+id/menu_ofertas_texto"
-            tools:layout_editor_absoluteX="10dp"
-            tools:listitem="@layout/card_producto1"/>
+            app:layout_constraintTop_toBottomOf="@+id/menu_ofertas_texto">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_ofertas2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:orientation="horizontal"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintTop_toBottomOf="@+id/rv_ofertas1"
-            tools:layout_editor_absoluteX="10dp"
-            tools:listitem="@layout/card_producto1"/>
+            <HorizontalScrollView
+                android:id="@+id/scroll_ofertas1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_ofertas1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@+id/ofertas_scrollVIew"
+                    tools:layout_editor_absoluteX="10dp"
+                    tools:listitem="@layout/card_producto1"/>
+            </HorizontalScrollView>
+
+        </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

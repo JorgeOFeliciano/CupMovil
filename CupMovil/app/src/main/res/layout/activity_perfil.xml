@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_coffee"
-    tools:context=".ProfileActivity">
+    tools:context=".Perfil">
 
     <!-- Menú Hamburger -->
     <ImageView
@@ -40,7 +39,6 @@
         android:layout_marginTop="32dp"
         android:src="@drawable/profile_imagen"
         android:contentDescription="Profile Image"
-        app:layout_constraintTop_toBottomOf="@id/menuIcon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
