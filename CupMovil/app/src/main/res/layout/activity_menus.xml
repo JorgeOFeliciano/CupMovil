@@ -7,86 +7,178 @@
     android:layout_height="match_parent"
     tools:context=".Menu">
 
-    <!-- Barra superior: Logo y menú -->
-    <LinearLayout
-        android:id="@+id/top_bar"
-        android:layout_width="0dp"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:padding="15dp"
+        tools:ignore="MissingConstraints">
 
         <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:id="@+id/menu_especial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/baseline_circle_24"
             android:backgroundTint="#809D9898"
-            android:padding="8dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
             android:scaleType="center"
             android:src="@drawable/baseline_menu_24"
-            app:tint="@color/white" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="15dp" />
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
 
         <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/baseline_circle_24"
             android:backgroundTint="#809D9898"
-            android:padding="8dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
             android:scaleType="center"
             android:src="@drawable/baseline_local_grocery_store_24"
-            app:tint="@color/white" />
-    </LinearLayout>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white"
+            tools:layout_editor_absoluteY="15dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+        <Button
+            android:id="@+id/btnCafe"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/cafe_menus"
+            android:text="Cafe"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnPizza"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintParent"
+            app:layout_constraintRight_toRightOf="@+id/constraintParent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/constraintParent" />
+
+        <Button
+            android:id="@+id/btnPizza"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pizza_menus"
+            android:backgroundTint="#80000000"
+            android:text="PIZZA"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintParent"
+            app:layout_constraintRight_toLeftOf="@+id/btnAlitas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCafe" />
+
+        <Button
+            android:id="@+id/btnAlitas"
+            android:layout_width="210dp"
+            android:layout_height="300dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/pizza_menus"
+            android:backgroundTint="#80000000"
+            android:text="ALITAS"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btnPizza"
+            app:layout_constraintRight_toRightOf="@id/constraintParent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCafe" />
+
+        <Button
+            android:id="@+id/btnCerveza"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/pizza_menus"
+            android:backgroundTint="#80000000"
+            android:text="CERVEZA"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintParent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPizza" />
+
+        <Button
+            android:id="@+id/btnPostre"
+            android:layout_width="210dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/pizza_menus"
+            android:backgroundTint="#80000000"
+            android:text="POSTRE"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="@+id/constraintParent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAlitas" />
+
+        <Button
+            android:id="@+id/btnHamburguesa"
+            android:layout_width="145dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/pizza_menus"
+            android:backgroundTint="#80000000"
+            android:text="HAMBURGUESA"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintParent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCerveza" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Contenedor para los botones -->
     <LinearLayout
         android:id="@+id/button_container"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:orientation="vertical"
         android:layout_margin="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <!-- Botones principales (Café y Pizza) -->
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnCafe"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="8dp"
-                android:background="@drawable/cafe_menus"
-                android:text="CAFÉ"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:backgroundTint="#80000000" />
 
-            <Button
-                android:id="@+id/btnPizza"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_margin="8dp"
-                android:background="@drawable/pizza_menus"
-                android:text="PIZZA"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:backgroundTint="#80000000" />
         </LinearLayout>
 
+<<<<<<< HEAD
         <!-- Grid de botones adicionales -->
         <GridLayout
             android:id="@+id/rightGrid"
@@ -148,6 +240,8 @@
                 android:textSize="18sp"
                 android:backgroundTint="#80000000" />
         </GridLayout>
+=======
+>>>>>>> 4c43a5ebb405c69dd7db7b20720cacc884286caa
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
