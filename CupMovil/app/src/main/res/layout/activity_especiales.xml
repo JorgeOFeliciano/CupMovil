@@ -9,8 +9,10 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/fondo_especiales"
+        android:layout_height="400dp"
+        android:scaleX="2"
+        android:scaleY="1.5"
+        android:src="@drawable/fondo_especiales"
         tools:ignore="MissingConstraints" />
 
     <TableLayout
