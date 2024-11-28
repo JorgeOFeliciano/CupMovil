@@ -93,6 +93,7 @@
 
     <!-- Cuadro de contenido con detalles -->
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="300dp"
         android:layout_height="500dp"
         android:background="@drawable/rounded_border"
@@ -218,13 +219,11 @@
         app:tint="@color/white"
         tools:layout_editor_absoluteY="15dp" />
 
-    <!-- Tabla de detalles -->
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/table_background"
         android:padding="8dp">
-        <!-- Aquí podrías agregar más filas y detalles de la tabla -->
     </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
