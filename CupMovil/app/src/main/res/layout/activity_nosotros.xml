@@ -112,7 +112,6 @@
         </TableRow>
     </TableLayout>
 
-    <!-- Menú flotante con submenús -->
     <LinearLayout
         android:id="@+id/fab_menu"
         android:layout_width="wrap_content"
@@ -133,7 +132,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#BEBAB6"
             android:contentDescription="Opción 1"
-            android:layout_margin="8dp"
+            android:layout_margin="5dp"
             app:tint="@color/white"
             app:srcCompat="@drawable/baseline_favorite_24"/>
 
@@ -142,7 +141,7 @@
             android:id="@+id/fab_option2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="5dp"
             android:backgroundTint="#BEBAB6"
             android:contentDescription="Opción 2"
             app:tint="@color/white"
@@ -152,7 +151,7 @@
             android:id="@+id/fab_option3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="5dp"
             android:contentDescription="Opción 2"
             android:backgroundTint="#F68B10"
             app:tint="@color/white"
@@ -162,7 +161,7 @@
             android:id="@+id/fab_option4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="5dp"
             android:contentDescription="Opción 2"
             android:backgroundTint="#BEBAB6"
             app:tint="@color/white"
@@ -172,7 +171,7 @@
             android:id="@+id/fab_option5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="5dp"
             android:backgroundTint="#BEBAB6"
             android:contentDescription="Opción 2"
             app:tint="@color/white"
