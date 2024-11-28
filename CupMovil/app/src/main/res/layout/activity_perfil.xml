@@ -95,7 +95,6 @@
 
     </LinearLayout>
 
-    <!-- Cuadro de contenido con detalles -->
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="300dp"
