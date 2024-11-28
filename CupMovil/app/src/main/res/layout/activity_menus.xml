@@ -93,7 +93,7 @@
                     android:src="@drawable/cafe_menus" />
 
                 <TextView
-                    android:id="@+id/btnCafe"
+                    android:id="@+id/btnCafeTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -144,7 +144,7 @@
 
                 <!-- Texto superpuesto -->
                 <ImageButton
-                    android:id="@+id/btnAlitas"
+                    android:id="@+id/btnAlitasImage"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="@null"
@@ -172,9 +172,6 @@
                 app:layout_constraintStart_toStartOf="@id/constraintParent"
                 app:layout_constraintTop_toBottomOf="@id/btnAlitas">
 
-                <!-- Imagen de fondo como ImageButton -->
-
-                <!-- Texto superpuesto -->
                 <ImageButton
                     android:id="@+id/bHamburguesa"
                     android:layout_width="wrap_content"
@@ -182,7 +179,7 @@
                     android:background="@null"
                     android:contentDescription="@string/menu_hamburguesa"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/Hamburguesa_menus" />
+                    android:src="@drawable/hamburguesa_menus" />
 
                 <TextView
                     android:id="@+id/txtHamburguesa"
@@ -232,7 +229,7 @@
                 android:layout_marginTop="10dp"
                 app:layout_constraintEnd_toEndOf="@id/constraintParent"
                 app:layout_constraintStart_toStartOf="@id/constraintParent"
-                app:layout_constraintTop_toBottomOf="@id/btnAlitas">
+                app:layout_constraintTop_toBottomOf="@id/btnHamburguesa">
 
                 <!-- Imagen de fondo como ImageButton -->
                 <ImageButton
@@ -258,74 +255,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        <!-- Grid de botones adicionales -->
-        <GridLayout
-            android:id="@+id/rightGrid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:columnCount="2"
-            android:rowCount="2"
-            android:gravity="center">
-
-            <!-- Botón: Alitas -->
-            <Button
-                android:id="@+id/btnAlitas"
-                android:layout_width="140dp"
-                android:layout_height="120dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/alitas_menus"
-                android:text="ALITAS"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:backgroundTint="#80000000" />
-
-            <!-- Botón: Cerveza -->
-            <Button
-                android:id="@+id/btnCerveza"
-                android:layout_width="140dp"
-                android:layout_height="120dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/cerveza_menus"
-                android:text="CERVEZA"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:backgroundTint="#80000000" />
-
-            <!-- Botón: Hamburguesa -->
-            <Button
-                android:id="@+id/btnHamburguesa"
-                android:layout_width="140dp"
-                android:layout_height="120dp"
-                android:layout_margin="4dp"
-                android:text="HAMBURGUESA"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:backgroundTint="#80000000" />
-
-            <!-- Botón: Postre -->
-            <Button
-                android:id="@+id/btnPostre"
-                android:layout_width="140dp"
-                android:layout_height="120dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/postre_menus"
-                android:text="POSTRE"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:backgroundTint="#80000000" />
-        </GridLayout>
-=======
->>>>>>> 4c43a5ebb405c69dd7db7b20720cacc884286caa
-    </LinearLayout>
->>>>>>> 3bcc798188657ed69aa0b2f6bcae7df0a039e974
 
 </androidx.constraintlayout.widget.ConstraintLayout>
