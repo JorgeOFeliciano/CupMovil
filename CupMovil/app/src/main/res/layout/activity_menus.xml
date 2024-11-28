@@ -113,8 +113,6 @@
                 app:layout_constraintTop_toBottomOf="@id/btnCafe">
 
                 <!-- Imagen de fondo como ImageButton -->
-
-                <!-- Texto superpuesto -->
                 <ImageButton
                     android:id="@+id/bPizza"
                     android:layout_width="wrap_content"
@@ -129,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Pizza"
+                    android:text="Pizzas"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -155,11 +153,11 @@
                     android:src="@drawable/alitas_menus" />
 
                 <TextView
-                    android:id="@+id/txtCafe"
+                    android:id="@+id/txtAlitas"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Cafe"
+                    android:text="Alitas"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -178,27 +176,27 @@
 
                 <!-- Texto superpuesto -->
                 <ImageButton
-                    android:id="@+id/imgBtnCafe"
+                    android:id="@+id/bHamburguesa"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="@null"
-                    android:contentDescription="@string/cafe_button"
+                    android:contentDescription="@string/menu_hamburguesa"
                     android:scaleType="centerCrop"
                     android:src="@drawable/Hamburguesa_menus" />
 
                 <TextView
-                    android:id="@+id/txtCafe"
+                    android:id="@+id/txtHamburguesa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Cafe"
+                    android:text="Hamburguesas"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </FrameLayout>
 
             <FrameLayout
-                android:id="@+id/btnPostre"
+                android:id="@+id/bPostre"
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_marginTop="10dp"
@@ -207,8 +205,6 @@
                 app:layout_constraintTop_toBottomOf="@id/btnHamburguesa">
 
                 <!-- Imagen de fondo como ImageButton -->
-
-                <!-- Texto superpuesto -->
                 <ImageButton
                     android:id="@+id/btnPostre"
                     android:layout_width="wrap_content"
@@ -219,23 +215,52 @@
                     android:src="@drawable/postre_menus" />
 
                 <TextView
-                    android:id="@+id/btnAlitas"
+                    android:id="@+id/txtPostre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Alitas"
+                    android:text="Postres"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </FrameLayout>
 
 
-            <!-- Más botones según sea necesario -->
+
+
+            <FrameLayout
+                android:id="@+id/bCerveza"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@id/constraintParent"
+                app:layout_constraintStart_toStartOf="@id/constraintParent"
+                app:layout_constraintTop_toBottomOf="@id/btnAlitas">
+
+                <!-- Imagen de fondo como ImageButton -->
+                <ImageButton
+                    android:id="@+id/btnPCervezas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:contentDescription="@string/menu_bebidas"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bebida_menus" />
+
+                <TextView
+                    android:id="@+id/txtBebidas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Bebidas"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
