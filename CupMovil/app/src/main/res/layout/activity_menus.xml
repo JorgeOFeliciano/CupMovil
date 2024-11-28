@@ -224,10 +224,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </FrameLayout>
-
-
-
-
+            
             <FrameLayout
                 android:id="@+id/bCerveza"
                 android:layout_width="wrap_content"
