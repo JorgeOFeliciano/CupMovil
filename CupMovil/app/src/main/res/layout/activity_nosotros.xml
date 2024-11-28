@@ -9,126 +9,108 @@
     android:background="#FFFFFF"
     tools:context=".Nosotros">
 
-    <!-- Sección Nosotros -->
-    <LinearLayout
-        android:id="@+id/nosotros"
-        android:layout_width="0dp"
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:paddingTop="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/contenedorMisionyVision">
+        tools:ignore="MissingConstraints"
+        android:layout_margin="10dp">
 
-        <!-- nosotros -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="285dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/fondo_nosotros"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <TextView
-                android:id="@+id/nosotrosTitulo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+        <TableRow>
+            <LinearLayout
+                android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="@string/nosotros_titulo"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:textStyle="bold"/>
+                android:layout_width="0dp"
+                android:layout_height="285dp"
+                android:layout_weight="1"
+                android:background="@drawable/fondo_nosotros"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-            <TextView
-                android:id="@+id/nosotrosDescripcion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:gravity="center"
-                android:text="@string/nosotros_descripcion"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"/>
-        </LinearLayout>
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/nosotrosTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/nosotros_titulo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
 
-    <!-- Sección Misión y Visión -->
-    <LinearLayout
-        android:id="@+id/contenedorMisionyVision"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:paddingBottom="70dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+                <TextView
+                    android:id="@+id/nosotrosDescripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="@string/nosotros_descripcion"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="300dp"
+                android:background="@drawable/fondo_mision"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_margin="10dp">
 
-        <!-- Misión -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="300dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/fondo_mision"
-            android:orientation="vertical"
-            android:padding="16dp">
+                <TextView
+                    android:id="@+id/misionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mision_titulo"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/misionTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/mision_titulo"
-                android:textColor="#FFFFFF"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/misionDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/mision_descripcion"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/misionDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@string/mision_descripcion"
-                android:gravity="center"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
-        </LinearLayout>
+            <!-- Visión -->
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="300dp"
+                android:background="@drawable/fondo_vision"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_margin="10dp">
 
-        <!-- Visión -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="300dp"
-            android:layout_marginStart="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/fondo_vision"
-            android:orientation="vertical"
-            android:padding="16dp">
+                <TextView
+                    android:id="@+id/visionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vision_titulo"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/visionTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/vision_titulo"
-                android:textColor="#FFFFFF"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/visionDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@string/vision_descripcion"
-                android:gravity="center"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
-        </LinearLayout>
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/visionDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/vision_descripcion"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
 
     <!-- Menú flotante con submenús -->
     <LinearLayout
