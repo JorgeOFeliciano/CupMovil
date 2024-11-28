@@ -57,39 +57,41 @@
             app:srcCompat="@drawable/baseline_fastfood_24"
             app:tint="@color/white" />
 
+        <!-- Botón del submenú 3 -->
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_option3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:backgroundTint="#BEBAB6"
-            android:contentDescription="Opción 2"
+            android:contentDescription="Opción 3"
             app:srcCompat="@drawable/baseline_coffee_24"
             app:tint="@color/white" />
 
+        <!-- Botón del submenú 4 -->
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_option4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:backgroundTint="#BEBAB6"
-            android:contentDescription="Opción 2"
+            android:contentDescription="Opción 4"
             app:srcCompat="@drawable/baseline_table_bar_24"
             app:tint="@color/white" />
 
+        <!-- Botón del submenú 5 -->
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_option5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:backgroundTint="#BEBAB6"
-            android:contentDescription="Opción 2"
+            android:contentDescription="Opción 5"
             app:srcCompat="@drawable/baseline_people_24"
             app:tint="@color/white" />
-
-
     </LinearLayout>
 
+    <!-- Cuadro de contenido con detalles -->
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="500dp"
@@ -216,18 +218,13 @@
         app:tint="@color/white"
         tools:layout_editor_absoluteY="15dp" />
 
-
-
-
-
     <!-- Tabla de detalles -->
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/table_background"
         android:padding="8dp">
-
-
+        <!-- Aquí podrías agregar más filas y detalles de la tabla -->
     </TableLayout>
-     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
