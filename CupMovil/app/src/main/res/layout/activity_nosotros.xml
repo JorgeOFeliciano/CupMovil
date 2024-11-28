@@ -34,7 +34,7 @@
 
             <TextView
                 android:id="@+id/nosotrosTitulo"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
@@ -79,10 +79,11 @@
 
             <TextView
                 android:id="@+id/misionTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/mision_titulo"
                 android:textColor="#FFFFFF"
+                android:gravity="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -92,6 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/mision_descripcion"
+                android:gravity="center"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -108,10 +110,11 @@
 
             <TextView
                 android:id="@+id/visionTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/vision_titulo"
                 android:textColor="#FFFFFF"
+                android:gravity="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -121,6 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/vision_descripcion"
+                android:gravity="center"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
         </LinearLayout>
