@@ -93,6 +93,7 @@
 
     <!-- Cuadro de contenido con detalles -->
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="300dp"
         android:layout_height="500dp"
         android:background="@drawable/rounded_border"
@@ -191,6 +192,7 @@
         android:padding="15dp"
         tools:ignore="MissingConstraints">
 
+<<<<<<< HEAD
         <ImageButton
             android:id="@+id/menu_especial"
             android:layout_width="wrap_content"
@@ -226,13 +228,19 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <!-- Tabla de detalles -->
+=======
+>>>>>>> f41bc98d1b6450f6a2c90481b1b4db9a5f7be446
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/table_background"
+<<<<<<< HEAD
         android:padding="8dp"
         tools:ignore="MissingConstraints">
         <!-- Aquí podrías agregar más filas y detalles de la tabla -->
+=======
+        android:padding="8dp">
+>>>>>>> f41bc98d1b6450f6a2c90481b1b4db9a5f7be446
     </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
