@@ -4,13 +4,10 @@
     //Especiaes
     <string name="menu_especial1">Cafe</string>
     <string name="menu_especial2">Bebidas</string>
-<<<<<<< Updated upstream
     <string name="menu_especial3">Postres</string>
     <string name="menu_especial4">Bebidas</string>
     <string name="menu_especial5">Popular</string>
     <string name="menu_especial6">Ofertas</string>
-=======
-
 
     //Menus
     <string name="menu_bebidas">Bebidas</string>
@@ -21,8 +18,6 @@
     <string name="menu_cerveza">Cerveza</string>
     <string name="menu_cafe">Cafe</string>
 
-
->>>>>>> Stashed changes
 
     //nosotros
     <string name="nosotros_titulo">NOSOTROS</string>
