@@ -259,5 +259,73 @@
 
     </ScrollView>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <!-- Grid de botones adicionales -->
+        <GridLayout
+            android:id="@+id/rightGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:gravity="center">
+
+            <!-- Botón: Alitas -->
+            <Button
+                android:id="@+id/btnAlitas"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/alitas_menus"
+                android:text="ALITAS"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:backgroundTint="#80000000" />
+
+            <!-- Botón: Cerveza -->
+            <Button
+                android:id="@+id/btnCerveza"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/cerveza_menus"
+                android:text="CERVEZA"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:backgroundTint="#80000000" />
+
+            <!-- Botón: Hamburguesa -->
+            <Button
+                android:id="@+id/btnHamburguesa"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_margin="4dp"
+                android:text="HAMBURGUESA"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:backgroundTint="#80000000" />
+
+            <!-- Botón: Postre -->
+            <Button
+                android:id="@+id/btnPostre"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/postre_menus"
+                android:text="POSTRE"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:backgroundTint="#80000000" />
+        </GridLayout>
+=======
+>>>>>>> 4c43a5ebb405c69dd7db7b20720cacc884286caa
+    </LinearLayout>
+>>>>>>> 3bcc798188657ed69aa0b2f6bcae7df0a039e974
 
 </androidx.constraintlayout.widget.ConstraintLayout>
