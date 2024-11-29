@@ -7,6 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".Perfil">
 
+<<<<<<< HEAD
+=======
+
+    <!-- Fondo de pantalla -->
+
+>>>>>>> 8b5934c7f78d345a93c9499cef39ace3effdc2c8
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -14,6 +20,11 @@
         android:scaleType="centerCrop"
         android:src="@drawable/fondo_especiales" />
 
+<<<<<<< HEAD
+=======
+    <!-- Capa de sombreado -->
+
+>>>>>>> 8b5934c7f78d345a93c9499cef39ace3effdc2c8
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,8 +32,78 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
+=======
+    <LinearLayout
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="1dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <!-- Cuadro de contenido con detalles -->
+        <!-- Botón del submenú 1 -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BEBAB6"
+            android:contentDescription="Opción 1"
+            android:layout_margin="5dp"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_favorite_24"/>
+
+        <!-- Botón del submenú 2 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#BEBAB6"
+            android:contentDescription="Opción 2"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_fastfood_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="Opción 2"
+            android:backgroundTint="#BEBAB6"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_coffee_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="Opción 2"
+            android:backgroundTint="#BEBAB6"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_table_bar_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#F68B10"
+            android:contentDescription="Opción 2"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_people_24" />
+
+
+    </LinearLayout>
+>>>>>>> 8b5934c7f78d345a93c9499cef39ace3effdc2c8
+
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="300dp"
@@ -36,6 +117,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.497">
+
+        <ImageView
+            android:id="@+id/profileImage2"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_background"
+            android:baselineAligned="false"
+            android:contentDescription="Profile Image"
+            android:elevation="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/perfil" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JORGE OSVALDO"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+
+
+
+
 
         <TableRow
             android:id="@+id/tableUser"
@@ -96,6 +203,7 @@
             android:gravity="center">
 
             <!-- Columna Fecha -->
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,6 +235,8 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
+
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -141,6 +251,7 @@
                     android:text="1"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
+
             </LinearLayout>
 
             <!-- Columna Total -->
@@ -166,6 +277,7 @@
                     android:textSize="16sp" />
             </LinearLayout>
         </TableRow>
+
     </LinearLayout>
 
 
@@ -175,7 +287,7 @@
         android:layout_height="wrap_content"
         android:padding="15dp"
         tools:ignore="MissingConstraints">
-        
+
         <ImageButton
             android:id="@+id/menu_especial"
             android:layout_width="wrap_content"
@@ -224,6 +336,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+<<<<<<< HEAD
         <!-- Botón del submenú 1 -->
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_option1"
@@ -278,5 +391,11 @@
 
 
     </LinearLayout>
+=======
+        android:padding="8dp"
+        tools:ignore="MissingConstraints">
+        <!-- Aquí podrías agregar más filas y detalles de la tabla -->
+    </TableLayout>
+>>>>>>> 8b5934c7f78d345a93c9499cef39ace3effdc2c8
 
 </androidx.constraintlayout.widget.ConstraintLayout>
