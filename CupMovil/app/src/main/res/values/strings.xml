@@ -102,4 +102,7 @@
     <string name="descripcion">Descripción breve del producto</string>
 
     //item_order
+    <string name="item_order1">Cafe Latte</string>
+    <string name="item_order2">Coffeinopia Bogor</string>
+    <string name="item_order3">Recoger</string>
 </resources>

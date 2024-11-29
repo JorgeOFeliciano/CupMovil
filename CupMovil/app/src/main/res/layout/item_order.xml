@@ -35,7 +35,7 @@
                 android:id="@+id/order_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cafe Latte"
+                android:text="@string/item_order1"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="#000000" />
@@ -44,7 +44,7 @@
                 android:id="@+id/order_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Coffeinopia Bogor"
+                android:text="@string/item_order1"
                 android:textSize="14sp"
                 android:textColor="#777777" />
 
@@ -52,7 +52,7 @@
                 android:id="@+id/order_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pick Up"
+                android:text="@string/item_order1"
                 android:textSize="14sp"
                 android:textColor="#FFA726" />
         </LinearLayout>
