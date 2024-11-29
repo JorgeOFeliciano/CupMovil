@@ -47,6 +47,14 @@
 
 
     //Login
+    <string name="login1">Bienvenido a CupMovil</string>
+    <string name="login2">Iniciar Sesión</string>
+    <string name="login3">Correo Electronico</string>
+    <string name="login4">Contraseña</string>
+    <string name="login5">¿Has olvidado tu contraseña?</string>
+    <string name="login6">Iniciar Sesión</string>
+    <string name="login7">¿No tienes una cuenta?</string>
+    <string name="login8">Registrarse</string>
 
 
 

@@ -26,7 +26,7 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bienvenido a CupMovil"
+            android:text="@string/login1"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:fontFamily="sans-serif-medium"
@@ -37,7 +37,7 @@
             android:id="@+id/subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Iniciar Sesión"
+            android:text="@string/login2"
             android:textSize="16sp"
             android:textColor="#838383"
             android:layout_marginBottom="24dp" />
@@ -47,7 +47,7 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email address"
+            android:hint="@string/login3"
             android:inputType="textEmailAddress"
             android:padding="12dp"
             android:layout_marginBottom="16dp" />
@@ -57,7 +57,7 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/login4"
             android:inputType="textPassword"
             android:padding="12dp"
             android:layout_marginBottom="8dp" />
@@ -67,7 +67,7 @@
             android:id="@+id/forgot_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forgot password?"
+            android:text="@string/login5"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:layout_gravity="end"
@@ -78,7 +78,7 @@
             android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="@string/login6"
             android:backgroundTint="#F68B10"
             android:textColor="@color/white"
             android:layout_marginBottom="16dp" />
@@ -94,7 +94,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don’t have an account? "
+                android:text="@string/login7"
                 android:textSize="14sp"
                 android:textColor="#A2A2A2"
                 android:layout_gravity="center" />
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
-                android:text="Sign up"
+                android:text="@string/login8"
                 android:textSize="10sp"
                 android:textColor="@color/black"/>
 
