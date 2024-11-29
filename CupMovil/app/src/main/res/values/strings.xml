@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">CupMovil</string>
 
+    //Activity Menus
+    <string name="Activity_menus1">CAFÉ</string>
+    <string name="Activity_menus2">PIZZA</string>
+    <string name="Activity_menus3">ALITAS</string>
+    <string name="Activity_menus4">HAMBURGUESA</string>
+    <string name="Activity_menus5">CERVEZA</string>
+    <string name="Activity_menus6">POSTRE</string>
+
+
+
     //Especiaes
     <string name="menu_especial1">Cafe</string>
     <string name="menu_especial2">Bebidas</string>
