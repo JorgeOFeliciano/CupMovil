@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Admin_Comentarios"><ImageView
+    android:id="@+id/background_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:src="@drawable/fondo_especiales"
+    android:alpha="0.9"/>
+
+    <View
+        android:id="@+id/dark_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#15ffffff" />
+
+
+    <!-- Encabezado con pestañas -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_circle_24"
+                android:backgroundTint="#809D9898"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="16dp"
+                android:scaleType="center"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:text="Comentario"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonNotification"
+                app:layout_constraintStart_toEndOf="@+id/btn_back" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_circle_24"
+                android:backgroundTint="#809D9898"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="16dp"
+                android:scaleType="center"
+                android:src="@drawable/baseline_notifications_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <ScrollView
+            android:id="@+id/rv_carrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/menu_popular"
+                tools:layout_editor_absoluteX="10dp"
+                tools:listitem="@layout/item_order"/>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="1dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Botón del submenú 1 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BEBAB6"
+            android:contentDescription="Opción 1"
+            android:layout_margin="5dp"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_supervised_user_circle_24"/>
+
+        <!-- Botón del submenú 2 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#BEBAB6"
+            android:contentDescription="Opción 2"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_shopping_bag_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="Opción 2"
+            android:backgroundTint="#F68B10"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_comment_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="Opción 2"
+            android:backgroundTint="#BEBAB6"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_edit_note_24" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -9,114 +9,267 @@
     android:background="#FFFFFF"
     tools:context=".Nosotros">
 
-    <TableLayout
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_especiales"
+        android:alpha="0.9"/>
+
+    <View
+        android:id="@+id/dark_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#15ffffff" />
+
+    <!-- Cabecera o barra superior -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        android:layout_margin="10dp">
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        tools:ignore="MissingConstraints">
 
-        <TableRow>
-            <LinearLayout
-                android:layout_marginTop="10dp"
+        <ImageButton
+            android:id="@+id/menu_especial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_circle_24"
+            android:backgroundTint="#809D9898"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:scaleType="center"
+            android:src="@drawable/baseline_menu_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/imageButtonStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_circle_24"
+            android:backgroundTint="#809D9898"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:scaleType="center"
+            android:src="@drawable/baseline_local_grocery_store_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ScrollView para contenido desplazable -->
+    <!-- ScrollView para contenido desplazable -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+        app:layout_constraintBottom_toTopOf="@+id/fab_menu">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <!-- Primera fila: Nosotros -->
+            <TableRow
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fondo_nosotros"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/nosotrosTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="start"
+                        android:text="@string/nosotros_titulo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="42sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nosotrosDescripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="left"
+                        android:text="@string/nosotros_descripcion"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:justificationMode="inter_word"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fondo_nosotros"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/misionTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="start"
+                        android:text="@string/mision_titulo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="42sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/misionDescripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="left"
+                        android:text="@string/mision_descripcion"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:justificationMode="inter_word"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </TableRow>
+
+
+            <TableRow
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ubi"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp"></LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fondo_nosotros"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/visionTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="start"
+                        android:text="@string/vision_titulo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="42sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/visionDescripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="left"
+                        android:text="@string/vision_descripcion"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:justificationMode="inter_word"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fondo_nosotros"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/objetivoTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="start"
+                        android:text="@string/nosotros_titulo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="42sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/objetivoDescripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="left"
+                        android:text="@string/nosotros_descripcion"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:justificationMode="inter_word"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </TableRow>
+
+
+            <!-- Botón final -->
+            <TableRow
                 android:gravity="center"
-                android:layout_width="0dp"
-                android:layout_height="285dp"
-                android:layout_weight="1"
-                android:background="@drawable/fondo_nosotros"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:id="@+id/nosotrosTitulo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:gravity="center"
-                    android:text="@string/nosotros_titulo"
-                    android:textColor="#FFFFFF"
-                    android:textSize="24sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/nosotrosDescripcion"
+                android:paddingBottom="20dp">
+                <Button
+                    android:id="@+id/btnContacto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:gravity="center"
-                    android:text="@string/nosotros_descripcion"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"/>
-            </LinearLayout>
-        </TableRow>
-        <TableRow
-            android:gravity="center"
-            android:layout_marginTop="10dp">
-            <LinearLayout
-                android:layout_width="175dp"
-                android:layout_height="300dp"
-                android:background="@drawable/fondo_mision"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:layout_margin="10dp">
+                    android:text="Contáctate con nosotros"
+                    android:backgroundTint="#F68B10" />
+            </TableRow>
 
-                <TextView
-                    android:id="@+id/misionTitle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/mision_titulo"
-                    android:textColor="#FFFFFF"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+        </TableLayout>
 
-                <TextView
-                    android:id="@+id/misionDescription"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/mision_descripcion"
-                    android:gravity="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </LinearLayout>
+    </ScrollView>
 
-            <!-- Visión -->
-            <LinearLayout
-                android:layout_width="175dp"
-                android:layout_height="300dp"
-                android:background="@drawable/fondo_vision"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:layout_margin="10dp">
-
-                <TextView
-                    android:id="@+id/visionTitle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/vision_titulo"
-                    android:textColor="#FFFFFF"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/visionDescription"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/vision_descripcion"
-                    android:gravity="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp" />
-            </LinearLayout>
-        </TableRow>
-    </TableLayout>
 
     <LinearLayout
         android:id="@+id/fab_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
         android:layout_margin="1dp"
         android:padding="10dp"
         android:gravity="center"
@@ -165,7 +318,7 @@
             android:contentDescription="Opción 2"
             android:backgroundTint="#BEBAB6"
             app:tint="@color/white"
-            app:srcCompat="@drawable/baseline_table_bar_24" />
+            app:srcCompat="@drawable/baseline_local_florist_24" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_option5"
@@ -176,8 +329,6 @@
             android:contentDescription="Opción 2"
             app:tint="@color/white"
             app:srcCompat="@drawable/baseline_people_24" />
-
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

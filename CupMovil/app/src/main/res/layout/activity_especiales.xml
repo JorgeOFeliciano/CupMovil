@@ -33,7 +33,6 @@
         android:padding="15dp"
         tools:ignore="MissingConstraints">
 
-
         <ImageButton
             android:id="@+id/menu_especial"
             android:layout_width="wrap_content"
@@ -52,7 +51,7 @@
 
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/imageButtonStore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/baseline_circle_24"
@@ -77,10 +76,12 @@
             android:drawablePadding="8dp"
             android:hint="Buscar"
             android:padding="12dp"
-            android:textColorHint="#cccccc"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
             android:textSize="16sp"
             app:layout_constraintTop_toBottomOf="@+id/menu_especial"
             app:tint="@color/white" />
+
 
         <HorizontalScrollView
             android:id="@+id/horizontalScrollView"
@@ -146,6 +147,7 @@
             app:layout_constraintTop_toBottomOf="@+id/menu_popular">
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProductos1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
@@ -156,7 +158,6 @@
                 tools:listitem="@layout/card_producto1"/>
 
         </HorizontalScrollView>
-
 
         <TextView
             android:id="@+id/menu_ofertas_texto"
@@ -195,76 +196,75 @@
 
         </ScrollView>
 
-        <!-- Menú flotante con submenús -->
-        <LinearLayout
-            android:id="@+id/fab_menu"
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Tabla de detalles -->
+    <LinearLayout
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="1dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Botón del submenú 1 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="1dp"
-            android:padding="10dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            android:backgroundTint="#F68B10"
+            android:contentDescription="Opción 1"
+            android:layout_margin="5dp"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_favorite_24"/>
 
-            <!-- Botón del submenú 1 -->
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab_option1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#F68B10"
-                android:contentDescription="Opción 1"
-                android:layout_margin="5dp"
-                app:tint="@color/white"
-                app:srcCompat="@drawable/baseline_favorite_24"/>
+        <!-- Botón del submenú 2 -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#BEBAB6"
+            android:contentDescription="Opción 2"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_fastfood_24" />
 
-            <!-- Botón del submenú 2 -->
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab_option2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:backgroundTint="#BEBAB6"
-                android:contentDescription="Opción 2"
-                app:tint="@color/white"
-                app:srcCompat="@drawable/baseline_fastfood_24" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="Opción 2"
+            android:backgroundTint="#BEBAB6"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_coffee_24" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab_option3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:contentDescription="Opción 2"
-                android:backgroundTint="#BEBAB6"
-                app:tint="@color/white"
-                app:srcCompat="@drawable/baseline_coffee_24" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="Opción 2"
+            android:backgroundTint="#BEBAB6"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_local_florist_24" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab_option4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:contentDescription="Opción 2"
-                android:backgroundTint="#BEBAB6"
-                app:tint="@color/white"
-                app:srcCompat="@drawable/baseline_table_bar_24" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab_option5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:backgroundTint="#BEBAB6"
-                android:contentDescription="Opción 2"
-                app:tint="@color/white"
-                app:srcCompat="@drawable/baseline_people_24" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_option5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#BEBAB6"
+            android:contentDescription="Opción 2"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/baseline_people_24" />
 
 
-        </LinearLayout>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
