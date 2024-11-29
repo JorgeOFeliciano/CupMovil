@@ -1,5 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CupMovil</string>
-    <string name="AdminComentarios1">Comment</string>
+    <resources>
+        <string name="app_name">CupMobile</string>
+
+        //AdminComentarios
+        <string name="AdminComentarios1">Comment</string>
+
+        //AdminCompras
+        <string name="AdminCompras1">Purchases</string>
+        <string name="AdminCompras2">Pending</string>
+        <string name="AdminCompras3">Sales</string>
+
+        //AdminInventario
+        <string name="AdminInventario1">Users</string>
+        <string name="AdminInventario2">Food</string>
+        <string name="AdminInventario3">Drinks</string>
+
+        //AdminUsuario
+        <string name="AdminUsuario1">Users</string>
+        <string name="AdminUsuario2">Customers</string>
+        <string name="AdminUsuario3">Workers</string>
+
+        // carrito
+        <string name="carrito1">Cart</string>
+        <string name="carrito2">Pending</string>
+        <string name="carrito3">Completed</string>
+
+        //Contacto
+        <string name="contacto1">Get in touch</string>
+        <string name="contacto2">Let’s talk about how our team of experts can help.</string>
+        <string name="contacto3">Send Message</string>
+        <string name="contactoH1">First Name</string>
+        <string name="contactoH2">Last Name</string>
+        <string name="contactoH3">Email</string>
+        <string name="contactoH4">Phone Number</string>
+        <string name="contactoH5">Leave us a message...</string>
+
+        //Especiales
+        <string name="especiales1">Search</string>
+        <string name="especiales2">Coffee</string>
+        <string name="especiales3">Drinks</string>
+        <string name="especiales4">Desserts</string>
+        <string name="especiales5">Beers</string>
+        <string name="especiales6">Popular</string>
+        <string name="especiales7">Offers</string>
+
+        //Login
+        <string name="login1">Welcome to CupMobile</string>
+        <string name="login2">Sign In</string>
+        <string name="login3">Email</string>
+        <string name="login4">Password</string>
+        <string name="login5">Forgot your password?</string>
+        <string name="login6">Log In</string>
+        <string name="login7">Don’t have an account?</string>
+        <string name="login8">Sign Up</string>
+
+        //Menus
+        <string name="Menus1">COFFEE</string>
+        <string name="Menus2">PIZZA</string>
+        <string name="Menus3">WINGS</string>
+        <string name="Menus4">BURGER</string>
+        <string name="Menus5">BEER</string>
+        <string name="Menus6">DESSERT</string>
+
+        //Nosotros
+        <string name="Nosotros1">CUPHEAD CAFETERIA</string>
+        <string name="Nosotros3">MISSION</string>
+        <string name="Nosotros4">Provide our customers with a memorable experience by blending a passion for great coffee with a themed environment inspired by the vintage aesthetics of the 1930s. We are committed to offering quality products, exceptional service, and a fun atmosphere that inspires creativity and enjoyment in every cup served.</string>
+        <string name="Nosotros5">VISION</string>
+        <string name="Nosotros6">To become the most iconic and beloved themed café, offering a unique experience that combines retro charm with a cozy atmosphere and the highest quality coffee, creating a place where every visit is a flavorful journey back in time filled with nostalgia.</string>
+        <string name="Nosotros7">ABOUT US</string>
+        <string name="Nosotros8">OBJECTIVE</string>
+        <string name="Nosotros9">Develop a mobile application in Kotlin to benefit food service companies by providing better control and management of their order and sales records.</string>
+        <string name="Nosotros10">Contact us</string>
+
+        //Perfil
+        <string name="Perfil1">Purchases</string>
+        <string name="Perfil2">Visits</string>
+        <string name="Perfil3">Points</string>
+        <string name="Perfil4">Date:</string>
+        <string name="Perfil5">Table:</string>
+        <string name="Perfil6">Total:</string>
+
+        //Producto_Alitas
+        <string name="Producto_Alitas1">Chicken Wings</string>
+        <string name="Producto_Alitas2">$120.00</string>
+        <string name="Producto_Alitas3">Wings covered in buffalo, BBQ, or honey mustard sauce, served with celery and ranch dressing.</string>
+        <string name="Producto_Alitas4">Add to cart</string>
+
+        //Producto_Cafe
+        <string name="cafe1">-</string>
+        <string name="cafe2">1</string>
+        <string name="cafe3">+</string>
+        <string name="cafe4">Cappuccino</string>
+        <string name="cafe5">$45.00</string>
+        <string name="cafe6">Espresso-based coffee drink with steamed milk and a creamy foam layer.</string>
+        <string name="cafe7">Coffee size</string>
+        <string name="cafe8">Add to cart</string>
+
+        //Producto_Cerveza
+        <string name="cerveza1">-</string>
+        <string name="cerveza2">1</string>
+        <string name="cerveza3">+</string>
+        <string name="cerveza4">Craft Beer</string>
+        <string name="cerveza5">$60.00</string>
+        <string name="cerveza6">Wheat beer with a citrus touch and caramel malt notes.</string>
+        <string name="cerveza7">Volume</string>
+        <string name="cerveza8">Add to cart</string>
+
+        //Producto_Hamburguesa
+        <string name="hamburguesa1">-</string>
+        <string name="hamburguesa2">1</string>
+        <string name="hamburguesa3">+</string>
+        <string name="hamburguesa4">Classic Burger</string>
+        <string name="hamburguesa5">$80.00</string>
+        <string name="hamburguesa6">Beef burger with lettuce, tomato, cheddar cheese, and our special sauce.</string>
+        <string name="hamburguesa7">Size</string>
+        <string name="hamburguesa8">Add to cart</string>
+
+        //Producto_Pizza
+        <string name="pizza1">-</string>
+        <string name="pizza2">1</string>
+        <string name="pizza3">+</string>
+        <string name="pizza4">Pepperoni Pizza</string>
+        <string name="pizza5">$150.00</string>
+        <string name="pizza6">Medium pizza with pepperoni, mozzarella cheese, and homemade tomato sauce.</string>
+        <string name="pizza7">Size</string>
+        <string name="pizza8">Add to cart</string>
+
+        //Producto_Postre
+        <string name="Producto_Postre1">Chocolate Brownie</string>
+        <string name="Producto_Postre2">$50.00</string>
+        <string name="Producto_Postre3">Homemade brownie with chocolate chips and a touch of nuts.</string>
+        <string name="Producto_Postre4">Portion</string>
+        <string name="Producto_Postre5">Add to cart</string>
+
+        //Registro
+        <string name="Registro1">Create New User</string>
+        <string name="Registro2">Please fill out the fields.</string>
+        <string name="Registro3">Full Name</string>
+        <string name="Registro4">I agree to the terms and conditions</string>
+        <string name="Registro5">Create User</string>
+        <string name="Registro6">Email</string>
+        <string name="Registro7">Password</string>
+        <string name="Registro8">Date of Birth</string>
+
+        //Reservacion
+
+        //card_producto1
+        <string name="titulo">Product Name</string>
+        <string name="precio">$99.99</string>
+        <string name="descripcion">Brief product description</string>
+
+        //item_order
+        <string name="item_order1">Cafe Latte</string>
+        <string name="item_order2">Coffeinopia Bogor</string>
+        <string name="item_order3">Pick Up</string>
+    </resources>
+
 </resources>
