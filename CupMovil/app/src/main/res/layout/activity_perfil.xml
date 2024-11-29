@@ -138,7 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fff"
-                android:text="Compras"
+                android:text="@string/Perfil1"
                 android:textColor="#F68B10"/>
 
             <Button
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:backgroundTint="#38FFFFFF"
-                android:text="Visitas"
+                android:text="@string/Perfil2"
                 android:textColor="#000" />
 
             <Button
@@ -154,7 +154,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:backgroundTint="#38FFFFFF"
-                android:text="Puntos"
+                android:text="@string/Perfil3"
                 android:textColor="#000" />
         </LinearLayout>
 
@@ -176,7 +176,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="4dp"
-                    android:text="Fecha:"
+                    android:text="@string/Perfil4"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
 
@@ -202,7 +202,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="4dp"
-                    android:text="Mesa:"
+                    android:text="@string/Perfil5"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
 
@@ -226,7 +226,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="4dp"
-                    android:text="Total:"
+                    android:text="@string/Perfil6"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
 
