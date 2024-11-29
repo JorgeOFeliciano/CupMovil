@@ -10,9 +10,14 @@
     <string name="AdminCompras3">Ventas</string>
 
     //AdminInventario
-
+    <string name="AdminInventario1">Usuarios</string>
+    <string name="AdminInventario2">Alimentos</string>
+    <string name="AdminInventario3">Bebidas</string>
 
     //AdminUsuario
+    <string name="AdminUsuario1">Usuarios</string>
+    <string name="AdminUsuario2">Clientes</string>
+    <string name="AdminUsuario3">Trabajadores</string>
 
 
     // carrito
@@ -46,15 +51,32 @@
 
 
     //Menus
+    <string name="Menus1">CAFÉ</string>
+    <string name="Menus2">PIZZA</string>
+    <string name="Menus3">ALITAS</string>
+    <string name="Menus4">HAMBURGUESA</string>
+    <string name="Menus5">CERVEZA</string>
+    <string name="Menus6">POSTRE</string>
 
 
     //Nosotros
 
-
     //Perfil
+    <string name="Perfil1">Compras</string>
+    <string name="Perfil2">Visitas</string>
+    <string name="Perfil3">Puntos</string>
+    <string name="Perfil4">Fecha:</string>
+    <string name="Perfil5">Mesa:</string>
+    <string name="Perfil6">Total:</string>
 
 
-    //Producto_Alitas
+
+    //Producto_Alitas  hasta aqui
+    <string name="Producto_Alitas1">Alitas</string>
+    <string name="Producto_Alitas2">Pizza de Peperoni</string>
+    <string name="Producto_Alitas3">Tamaño del café</string>
+    <string name="Producto_Alitas4">Añadir a la bolsa</string>
+
 
 
     //Producto_Cafe
@@ -70,9 +92,22 @@
 
 
     //Producto_Postre
+    <string name="Producto_Postre1">Cerveza</string>
+    <string name="Producto_Postre2">$30.00</string>
+    <string name="Producto_Postre3">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
+    <string name="Producto_Postre4">Tamaño Cafe</string>
+    <string name="Producto_Postre5">Añadir al carrito</string>
 
 
     //Registro
+    <string name="Registro1">Crear Nuevo Usuario</string>
+    <string name="Registro2">Por favor rellenar los campos.</string>
+    <string name="Registro3">Nombre Completo</string>
+    <string name="Registro4">Estoy de acuerdo con los terminos y condiciones</string>
+    <string name="Registro5">Crear Usuario</string>
+    <string name="Registro6">Correo Electronico</string>
+    <string name="Registro7">Contraseña</string>
+    <string name="Registro8">Fecha de nacimiento</string>
 
 
     //Reservacion
@@ -84,4 +119,7 @@
     <string name="descripcion">Descripción breve del producto</string>
 
     //item_order
+    <string name="item_order1">Cafe Latte</string>
+    <string name="item_order2">Coffeinopia Bogor</string>
+    <string name="item_order3">Recoger</string>
 </resources>

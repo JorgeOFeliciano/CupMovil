@@ -169,7 +169,7 @@
                     android:background="@drawable/ubi"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="8dp"></LinearLayout>
+                    android:padding="8dp"/>
             </TableRow>
 
             <TableRow
