@@ -132,7 +132,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Peperoni Pizza"
+        android:text="Pizza de Peperoni"
         android:textSize="20sp"
         android:textColor="@android:color/darker_gray" />
 
@@ -141,7 +141,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Coffee Size"
+        android:text="Tamaño del café"
         android:textSize="16sp"
         android:textStyle="bold"
         android:textColor="@android:color/black" />
@@ -194,7 +194,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#F68B10"
-        android:text="Add To Bag"
+        android:text="Añadir a la bolsa"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:textStyle="bold"
