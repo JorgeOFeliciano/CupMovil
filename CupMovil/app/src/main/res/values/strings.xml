@@ -41,16 +41,46 @@
 
 
     //Producto_Cafe
-
+    <string name="cafe1">-</string>
+    <string name="cafe2">1</string>
+    <string name="cafe3">+</string>
+    <string name="cafe4">Cappuccino</string>
+    <string name="cafe5">$20.00</string>
+    <string name="cafe6">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
+    <string name="cafe7">Tamaño del café</string>
+    <string name="cafe8">Añadir al carrito</string>
 
     //Producto_Cerveza
+    <string name="cerveza1">-</string>
+    <string name="cerveza2">1</string>
+    <string name="cerveza3">+</string>
+    <string name="cerveza4">Cerveza</string>
+    <string name="cerveza5">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
+    <string name="cerveza6">Cerveza</string>
+    <string name="cerveza7">Tamaño Cafe</string>
+    <string name="cerveza8">Añadir al carrito</string>
 
 
     //Producto_Hamburguesa
+    <string name="hamburguesa1">-</string>
+    <string name="hamburguesa2">1</string>
+    <string name="hamburguesa3">+</string>
+    <string name="hamburguesa4">Hamburguesa</string>
+    <string name="hamburguesa5">$30.00</string>
+    <string name="hamburguesa6">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
+    <string name="hamburguesa7">Tamaño del café</string>
+    <string name="hamburguesa8">Añadir al carrito</string>
 
 
     //Producto_Pizza
-
+    <string name="pizza1">-</string>
+    <string name="pizza2">1</string>
+    <string name="pizza3">+</string>
+    <string name="pizza4">Pizza Peperoni</string>
+    <string name="pizza5">$30.00</string>
+    <string name="pizza6">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
+    <string name="pizza7">Tamaño del café</string>
+    <string name="pizza8">Añadir al carrito</string>
 
     //Producto_Postre
 
