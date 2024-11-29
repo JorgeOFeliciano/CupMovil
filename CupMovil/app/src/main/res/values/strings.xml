@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">CupMovil</string>
 
-    //Especiaes
-    <string name="menu_especial1">Cafe</string>
+    //AdminComentarios
+    <string name="AdminComentarios1">Comentario</string>
+
+    //AdminCompras
+    <string name="AdminCompras1">Compras</string>
+    <string name="AdminCompras2">Pendientes</string>
+    <string name="AdminCompras3">Ventas</string>
+
+    //Especialesc
     <string name="menu_especial2">Bebidas</string>
     <string name="menu_especial3">Postres</string>
     <string name="menu_especial4">Bebidas</string>

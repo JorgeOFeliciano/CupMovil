@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="16dp"
-                android:text="Compras"
+                android:text="@string/AdminCompras1"
                 android:textAlignment="center"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
@@ -100,11 +100,11 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pendientes" />
+                android:text="@string/AdminCompras2" />
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ventas" />
+                android:text="@string/AdminCompras3" />
         </com.google.android.material.tabs.TabLayout>
 
 
