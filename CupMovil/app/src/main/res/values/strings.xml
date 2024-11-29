@@ -34,15 +34,27 @@
 
 
     //Menus
+    <string name="Menus1">CAFÉ</string>
+    <string name="Menus2">PIZZA</string>
+    <string name="Menus3">ALITAS</string>
+    <string name="Menus4">HAMBURGUESA</string>
+    <string name="Menus5">CERVEZA</string>
+    <string name="Menus6">POSTRE</string>
 
 
     //Nosotros
 
-
     //Perfil
+    <string name="Perfil1">Compras</string>
+    <string name="Perfil2">Visitas</string>
+    <string name="Perfil3">Puntos</string>
+    <string name="Perfil4">Fecha:</string>
+    <string name="Perfil5">Mesa:</string>
+    <string name="Perfil6">Total:</string>
 
 
-    //Producto_Alitas
+
+    //Producto_Alitas  hasta aqui
 
 
     //Producto_Cafe
