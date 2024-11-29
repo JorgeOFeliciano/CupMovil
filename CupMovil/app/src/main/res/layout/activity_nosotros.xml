@@ -100,7 +100,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="16dp"
                         android:gravity="start"
-                        android:text="@string/nosotros_titulo"
+                        android:text="@string/Nosotros1"
                         android:textColor="#FFFFFF"
                         android:textSize="42sp"
                         android:textStyle="bold" />
@@ -111,7 +111,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:gravity="left"
-                        android:text="@string/nosotros_descripcion"
+                        android:text="@string/Nosotros2"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
                         android:justificationMode="inter_word"
@@ -138,7 +138,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="16dp"
                         android:gravity="start"
-                        android:text="@string/mision_titulo"
+                        android:text="@string/Nosotros8"
                         android:textColor="#FFFFFF"
                         android:textSize="42sp"
                         android:textStyle="bold" />
@@ -149,7 +149,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:gravity="left"
-                        android:text="@string/mision_descripcion"
+                        android:text="@string/Nosotros9"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
                         android:justificationMode="inter_word"
@@ -191,7 +191,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="16dp"
                         android:gravity="start"
-                        android:text="@string/vision_titulo"
+                        android:text="@string/Nosotros3"
                         android:textColor="#FFFFFF"
                         android:textSize="42sp"
                         android:textStyle="bold" />
@@ -202,7 +202,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:gravity="left"
-                        android:text="@string/vision_descripcion"
+                        android:text="@string/Nosotros4"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
                         android:justificationMode="inter_word"
@@ -229,7 +229,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="16dp"
                         android:gravity="start"
-                        android:text="@string/nosotros_titulo"
+                        android:text="@string/Nosotros5"
                         android:textColor="#FFFFFF"
                         android:textSize="42sp"
                         android:textStyle="bold" />
@@ -240,7 +240,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:gravity="left"
-                        android:text="@string/nosotros_descripcion"
+                        android:text="@string/Nosotros6"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
                         android:justificationMode="inter_word"
@@ -257,7 +257,7 @@
                     android:id="@+id/btnContacto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contáctate con nosotros"
+                    android:text="@string/Nosotros10"
                     android:backgroundTint="#F68B10" />
             </TableRow>
 

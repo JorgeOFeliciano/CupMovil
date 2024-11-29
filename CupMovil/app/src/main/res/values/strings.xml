@@ -43,6 +43,17 @@
 
 
     //Nosotros
+    <string name="Nosotros1">CUPHEAD CAFETERÍA</string>
+    <string name="Nosotros2"> </string>
+    <string name="Nosotros3">MISIÓN</string>
+    <string name="Nosotros4">Brindar a nuestros clientes una experiencia memorable al fusionar la pasión por el buen café con un entorno temático inspirado en la estética vintage de los años 30. Nos comprometemos a ofrecer productos de calidad, un servicio excepcional y un ambiente divertido que inspire la creatividad y el disfrute en cada taza servida.
+</string>
+    <string name="Nosotros5">VISIÓN</string>
+    <string name="Nosotros6">Convertirnos en la cafetería temática más icónica y querida, ofreciendo una experiencia única que combine el encanto retro con un ambiente acogedor y un café de la más alta calidad, creando un lugar donde cada visita sea un viaje en el tiempo lleno de sabor y nostalgia.</string>
+    <string name="Nosotros7">NOSOTROS</string>
+    <string name="Nosotros8">OBJETIVO</string>
+    <string name="Nosotros9">Desarrollar una aplicación móvil en kotlin que beneficie a las empresas de servicios alimentarios a tener un mejor control y administración sobre sus registros de pedidos y ventas.</string>
+    <string name="Nosotros10">Contáctate con nosotros</string>
 
     //Perfil
     <string name="Perfil1">Compras</string>
