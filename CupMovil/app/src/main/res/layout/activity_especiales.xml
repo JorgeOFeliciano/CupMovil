@@ -74,7 +74,7 @@
             android:backgroundTint="@color/white"
             android:drawableStart="@drawable/baseline_search_24"
             android:drawablePadding="8dp"
-            android:hint="Buscar"
+            android:hint="@string/especiales1"
             android:padding="12dp"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
@@ -101,14 +101,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="1dp"
                     android:backgroundTint="#F68B10"
-                    android:text="@string/menu_especial1" />
+                    android:text="@string/especiales2" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:backgroundTint="#38FFFFFF"
-                    android:text="@string/menu_especial2"
+                    android:text="@string/especiales3"
                     android:textColor="#ffffff" />
 
                 <Button
@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:backgroundTint="#38FFFFFF"
-                    android:text="@string/menu_especial3"
+                    android:text="@string/especiales4"
                     android:textColor="#ffffff" />
 
                 <Button
@@ -124,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:backgroundTint="#38FFFFFF"
-                    android:text="@string/menu_especial4"
+                    android:text="@string/especiales5"
                     android:textColor="#ffffff" />
             </LinearLayout>
         </HorizontalScrollView>
@@ -133,7 +133,7 @@
             android:id="@+id/menu_popular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/menu_especial5"
+            android:text="@string/especiales6"
             android:textColor="#ffffff"
             android:textSize="32dp"
             android:textStyle="bold"
@@ -163,7 +163,7 @@
             android:id="@+id/menu_ofertas_texto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/menu_especial6"
+            android:text="@string/especiales7"
             android:textColor="#000000"
             android:textSize="32dp"
             android:textStyle="bold"

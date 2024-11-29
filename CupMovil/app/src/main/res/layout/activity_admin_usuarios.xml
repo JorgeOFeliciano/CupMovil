@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="16dp"
-                android:text="Usuarios"
+                android:text="@string/AdminUsuario1"
                 android:textAlignment="center"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
@@ -100,11 +100,11 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Clientes" />
+                android:text="@string/AdminUsuario2" />
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Trabajadores" />
+                android:text="@string/AdminCompras3" />
         </com.google.android.material.tabs.TabLayout>
 
 
