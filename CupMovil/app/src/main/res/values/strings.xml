@@ -104,28 +104,27 @@
     <string name="hamburguesa1">-</string>
     <string name="hamburguesa2">1</string>
     <string name="hamburguesa3">+</string>
-    <string name="hamburguesa4">Hamburguesa</string>
-    <string name="hamburguesa5">$30.00</string>
-    <string name="hamburguesa6">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
-    <string name="hamburguesa7">Tamaño del café</string>
+    <string name="hamburguesa4">Hamburguesa Clásica</string>
+    <string name="hamburguesa5">$80.00</string>
+    <string name="hamburguesa6">Hamburguesa de carne de res con lechuga, tomate, queso cheddar, y nuestra salsa especial.</string>
+    <string name="hamburguesa7">Tamaño</string>
     <string name="hamburguesa8">Añadir al carrito</string>
-
 
     //Producto_Pizza
     <string name="pizza1">-</string>
     <string name="pizza2">1</string>
     <string name="pizza3">+</string>
-    <string name="pizza4">Pizza Peperoni</string>
-    <string name="pizza5">$30.00</string>
-    <string name="pizza6">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
-    <string name="pizza7">Tamaño del café</string>
+    <string name="pizza4">Pizza Pepperoni</string>
+    <string name="pizza5">$150.00</string>
+    <string name="pizza6">Pizza mediana con pepperoni, queso mozzarella y salsa de tomate casera.</string>
+    <string name="pizza7">Tamaño</string>
     <string name="pizza8">Añadir al carrito</string>
 
     //Producto_Postre
-    <string name="Producto_Postre1">Cerveza</string>
-    <string name="Producto_Postre2">$30.00</string>
-    <string name="Producto_Postre3">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
-    <string name="Producto_Postre4">Tamaño Cafe</string>
+    <string name="Producto_Postre1">Brownie de Chocolate</string>
+    <string name="Producto_Postre2">$50.00</string>
+    <string name="Producto_Postre3">Brownie casero con chispas de chocolate y un toque de nuez.</string>
+    <string name="Producto_Postre4">Porción</string>
     <string name="Producto_Postre5">Añadir al carrito</string>
 
 
