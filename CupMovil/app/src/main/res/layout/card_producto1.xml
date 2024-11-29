@@ -34,7 +34,7 @@
                 android:id="@+id/productTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre del Producto"
+                android:text="@string/titulo"
                 android:textSize="9sp"
                 android:textColor="#000000"
                 android:fontFamily="sans-serif-medium" />
@@ -44,7 +44,7 @@
                 android:id="@+id/productPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="$99.99"
+                android:text="@string/precio"
                 android:textSize="9sp"
                 android:textColor="#F68B10"
                 android:fontFamily="sans-serif" />
@@ -53,7 +53,7 @@
                 android:id="@+id/productDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Descripción breve del producto"
+                android:text="@string/descripcion"
                 android:textColor="#757474"
                 android:textSize="9sp"
                 android:fontFamily="sans-serif"/>

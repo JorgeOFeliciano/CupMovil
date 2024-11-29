@@ -36,4 +36,9 @@
     <string name="boton1">Favoritos</string>
     <string name="boton2">Regresar</string>
 
+    // carrito
+    <string name="titulo">Nombre del Producto</string>
+    <string name="precio">$99.99</string>
+    <string name="descripcion">Descripción breve del producto</string>
+
 </resources>
