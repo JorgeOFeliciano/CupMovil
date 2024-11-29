@@ -71,21 +71,19 @@
 
 
 
-    //Producto_Alitas  hasta aqui
-    <string name="Producto_Alitas1">Alitas</string>
-    <string name="Producto_Alitas2">Pizza de Peperoni</string>
-    <string name="Producto_Alitas3">Tamaño del café</string>
-    <string name="Producto_Alitas4">Añadir a la bolsa</string>
-
-
+    //Producto_Alitas
+    <string name="Producto_Alitas1">Alitas de Pollo</string>
+    <string name="Producto_Alitas2">$120.00</string>
+    <string name="Producto_Alitas3">Alitas bañadas en salsa buffalo, bbq o miel mostaza, servidas con apio y aderezo ranch.</string>
+    <string name="Producto_Alitas4">Añadir al carrito</string>
 
     //Producto_Cafe
     <string name="cafe1">-</string>
     <string name="cafe2">1</string>
     <string name="cafe3">+</string>
     <string name="cafe4">Cappuccino</string>
-    <string name="cafe5">$20.00</string>
-    <string name="cafe6">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
+    <string name="cafe5">$45.00</string>
+    <string name="cafe6">Bebida de café a base de espresso, con leche vaporizada y una capa de espuma cremosa.</string>
     <string name="cafe7">Tamaño del café</string>
     <string name="cafe8">Añadir al carrito</string>
 
@@ -93,11 +91,12 @@
     <string name="cerveza1">-</string>
     <string name="cerveza2">1</string>
     <string name="cerveza3">+</string>
-    <string name="cerveza4">Cerveza</string>
-    <string name="cerveza5">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
-    <string name="cerveza6">Cerveza</string>
-    <string name="cerveza7">Tamaño Cafe</string>
+    <string name="cerveza4">Cerveza Artesanal</string>
+    <string name="cerveza5">$60.00</string>
+    <string name="cerveza6">Cerveza de trigo con un toque cítrico y notas de malta caramelizada.</string>
+    <string name="cerveza7">Volumen</string>
     <string name="cerveza8">Añadir al carrito</string>
+
 
 
     //Producto_Hamburguesa
