@@ -16,12 +16,29 @@
 
 
     // carrito
+    <string name="carrito1">Carrito</string>
+    <string name="carrito2">Pendientes</string>
+    <string name="carrito3">Completadas</string>
 
 
     //Contacto
-
+    <string name="contacto1">Ponte en contacto</string>
+    <string name="contacto2">Hablemos sobre cómo nuestro equipo de expertos puede ayudar.</string>
+    <string name="contacto3">Enviar Mensaje</string>
+    <string name="contactoH1">Nombre</string>
+    <string name="contactoH2">Apellido</string>
+    <string name="contactoH3">Correo</string>
+    <string name="contactoH4">Numero de telefono</string>
+    <string name="contactoH5">Déjanos un mensaje...</string>
 
     //Especiales
+    <string name="especiales1">Buscar</string>
+    <string name="especiales2">Café</string>
+    <string name="especiales3">Bebidas</string>
+    <string name="especiales4">Postres</string>
+    <string name="especiales5">Cervezas</string>
+    <string name="especiales6">Popular</string>
+    <string name="especiales7">Ofertas</string>
 
 
     //Login
