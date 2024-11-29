@@ -16,9 +16,7 @@
 
 
     // carrito
-    <string name="titulo">Nombre del Producto</string>
-    <string name="precio">$99.99</string>
-    <string name="descripcion">Descripción breve del producto</string>
+
 
     //Contacto
 
@@ -64,7 +62,9 @@
 
 
     //card_producto1
-
+    <string name="titulo">Nombre del Producto</string>
+    <string name="precio">$99.99</string>
+    <string name="descripcion">Descripción breve del producto</string>
 
     //item_order
 </resources>
