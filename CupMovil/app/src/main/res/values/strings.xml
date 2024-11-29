@@ -10,9 +10,14 @@
     <string name="AdminCompras3">Ventas</string>
 
     //AdminInventario
-
+    <string name="AdminInventario1">Usuarios</string>
+    <string name="AdminInventario2">Alimentos</string>
+    <string name="AdminInventario3">Bebidas</string>
 
     //AdminUsuario
+    <string name="AdminUsuario1">Usuarios</string>
+    <string name="AdminUsuario2">Clientes</string>
+    <string name="AdminUsuario3">Trabajadores</string>
 
 
     // carrito
@@ -53,7 +58,7 @@
 
 
     //Producto_Postre
-
+    
 
     //Registro
 
