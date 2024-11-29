@@ -79,31 +79,59 @@
 
 
 
-    //Producto_Alitas  hasta aqui
-    <string name="Producto_Alitas1">Alitas</string>
-    <string name="Producto_Alitas2">Pizza de Peperoni</string>
-    <string name="Producto_Alitas3">Tamaño del café</string>
-    <string name="Producto_Alitas4">Añadir a la bolsa</string>
-
-
+    //Producto_Alitas
+    <string name="Producto_Alitas1">Alitas de Pollo</string>
+    <string name="Producto_Alitas2">$120.00</string>
+    <string name="Producto_Alitas3">Alitas bañadas en salsa buffalo, bbq o miel mostaza, servidas con apio y aderezo ranch.</string>
+    <string name="Producto_Alitas4">Añadir al carrito</string>
 
     //Producto_Cafe
-
+    <string name="cafe1">-</string>
+    <string name="cafe2">1</string>
+    <string name="cafe3">+</string>
+    <string name="cafe4">Cappuccino</string>
+    <string name="cafe5">$45.00</string>
+    <string name="cafe6">Bebida de café a base de espresso, con leche vaporizada y una capa de espuma cremosa.</string>
+    <string name="cafe7">Tamaño del café</string>
+    <string name="cafe8">Añadir al carrito</string>
 
     //Producto_Cerveza
+    <string name="cerveza1">-</string>
+    <string name="cerveza2">1</string>
+    <string name="cerveza3">+</string>
+    <string name="cerveza4">Cerveza Artesanal</string>
+    <string name="cerveza5">$60.00</string>
+    <string name="cerveza6">Cerveza de trigo con un toque cítrico y notas de malta caramelizada.</string>
+    <string name="cerveza7">Volumen</string>
+    <string name="cerveza8">Añadir al carrito</string>
+
 
 
     //Producto_Hamburguesa
-
+    <string name="hamburguesa1">-</string>
+    <string name="hamburguesa2">1</string>
+    <string name="hamburguesa3">+</string>
+    <string name="hamburguesa4">Hamburguesa Clásica</string>
+    <string name="hamburguesa5">$80.00</string>
+    <string name="hamburguesa6">Hamburguesa de carne de res con lechuga, tomate, queso cheddar, y nuestra salsa especial.</string>
+    <string name="hamburguesa7">Tamaño</string>
+    <string name="hamburguesa8">Añadir al carrito</string>
 
     //Producto_Pizza
-
+    <string name="pizza1">-</string>
+    <string name="pizza2">1</string>
+    <string name="pizza3">+</string>
+    <string name="pizza4">Pizza Pepperoni</string>
+    <string name="pizza5">$150.00</string>
+    <string name="pizza6">Pizza mediana con pepperoni, queso mozzarella y salsa de tomate casera.</string>
+    <string name="pizza7">Tamaño</string>
+    <string name="pizza8">Añadir al carrito</string>
 
     //Producto_Postre
-    <string name="Producto_Postre1">Cerveza</string>
-    <string name="Producto_Postre2">$30.00</string>
-    <string name="Producto_Postre3">Leche al 2%, jarabe de vainilla caliente extra virgen. Bebida de café a base de espresso que se originó en Italia y se prepara con espuma de leche al vapor.</string>
-    <string name="Producto_Postre4">Tamaño Cafe</string>
+    <string name="Producto_Postre1">Brownie de Chocolate</string>
+    <string name="Producto_Postre2">$50.00</string>
+    <string name="Producto_Postre3">Brownie casero con chispas de chocolate y un toque de nuez.</string>
+    <string name="Producto_Postre4">Porción</string>
     <string name="Producto_Postre5">Añadir al carrito</string>
 
 
