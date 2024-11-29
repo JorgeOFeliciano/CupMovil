@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:fillViewport="true">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_especiales"
+        android:alpha="0.9"/>
+
+    <View
+        android:id="@+id/dark_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_border"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:elevation="8dp">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear Nuevo Usuario"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Subtítulo -->
+            <TextView
+                android:id="@+id/form_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Por favor rellenar los campos."
+                android:textSize="16sp"
+                android:textColor="#808080"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Campo Nombre -->
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Completo"
+                android:inputType="textPersonName"
+                android:background="@drawable/rounded_border"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Campo Email -->
+            <EditText
+                android:id="@+id/email_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo Electronico"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/rounded_border"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Campo Contraseña -->
+            <EditText
+                android:id="@+id/password_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contrase{a"
+                android:inputType="textPassword"
+                android:background="@drawable/rounded_border"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Campo Fecha de Nacimiento -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/dob_field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Fecha de nacimiento"
+                    android:inputType="date"
+                    android:background="@drawable/rounded_border"
+                    android:padding="12dp"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:id="@+id/calendar_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_calendar_month_24"
+                    android:contentDescription="Calendar icon" />
+            </LinearLayout>
+
+            <!-- Checkbox -->
+            <CheckBox
+                android:id="@+id/terms_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estoy de acuerdo con los terminos y condiciones"
+                android:textColor="#808080"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Botón de Crear Usuario -->
+            <Button
+                android:id="@+id/create_user_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create User"
+                android:backgroundTint="#F68B10"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

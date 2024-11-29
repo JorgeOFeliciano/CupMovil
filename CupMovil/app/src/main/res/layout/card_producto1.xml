@@ -15,6 +15,7 @@
 
         <!-- Imagen del producto -->
         <ImageView
+            android:id="@+id/productImage"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:src="@drawable/fondo_tarjeta1"
@@ -30,6 +31,7 @@
 
             <!-- Nombre del producto -->
             <TextView
+                android:id="@+id/productTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nombre del Producto"
@@ -39,12 +41,22 @@
 
             <!-- Precio del producto -->
             <TextView
+                android:id="@+id/productPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="$99.99"
                 android:textSize="9sp"
                 android:textColor="#F68B10"
                 android:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/productDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción breve del producto"
+                android:textColor="#757474"
+                android:textSize="9sp"
+                android:fontFamily="sans-serif"/>
 
         </LinearLayout>
     </LinearLayout>

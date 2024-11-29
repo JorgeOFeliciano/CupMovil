@@ -2,10 +2,12 @@ package com.example.cupmovil
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.cupmovil.Admin.AdminUsuarios
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class Perfil : AppCompatActivity() {
@@ -19,13 +21,14 @@ class Perfil : AppCompatActivity() {
             insets
         }
 
-
         // Obtener los botones FAB por su ID
         val fabOption1: FloatingActionButton = findViewById(R.id.fab_option1)
         val fabOption2: FloatingActionButton = findViewById(R.id.fab_option2)
         val fabOption3: FloatingActionButton = findViewById(R.id.fab_option3)
         val fabOption4: FloatingActionButton = findViewById(R.id.fab_option4)
         val fabOption5: FloatingActionButton = findViewById(R.id.fab_option5)
+
+        val settingsButton: ImageButton = findViewById(R.id.buttonSetting)
 
         // Establecer un OnClickListener para cada FAB
         fabOption1.setOnClickListener {
@@ -55,6 +58,11 @@ class Perfil : AppCompatActivity() {
         fabOption5.setOnClickListener {
             // Iniciar la actividad de la opción 5
             val intent = Intent(this, Perfil::class.java)
+            startActivity(intent)
+        }
+
+        settingsButton.setOnClickListener {
+            val intent = Intent(this, AdminUsuarios::class.java)
             startActivity(intent)
         }
     }

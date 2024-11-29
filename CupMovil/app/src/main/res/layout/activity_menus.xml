@@ -5,14 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D2B48C"
+    android:background="#fff"
     tools:context=".Menu">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         tools:ignore="MissingConstraints">
 
         <ImageButton
@@ -33,7 +34,7 @@
 
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/imageButtonStore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/baseline_circle_24"
@@ -51,210 +52,219 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="450dp"
-        android:layout_marginTop="231dp"
-        android:layout_marginBottom="231dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/categoryGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:columnCount="2"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rowCount="3">
 
+        <!-- Categoría: Café -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+            android:translationZ="2dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintParent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+            <ImageButton
+                android:id="@+id/btnCoffee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Café"
+                android:background="@drawable/rounded_button_background"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:src="@drawable/cafe_menus" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_background" />
 
-            <!-- Botón Cafe -->
-            <FrameLayout
-                android:id="@+id/btnCafe"
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                app:layout_constraintEnd_toEndOf="@id/constraintParent"
-                app:layout_constraintStart_toStartOf="@id/constraintParent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CAFÉ"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
 
-                <!-- Imagen de fondo como ImageButton -->
+        <!-- Categoría: Pizza -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
 
-                <!-- Texto superpuesto -->
-                <ImageButton
-                    android:id="@+id/BCafe"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:contentDescription="@string/menu_cafe"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/cafe_menus" />
-
-                <TextView
-                    android:id="@+id/btnCafeTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Cafe"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
-            <!-- Botón pizza -->
-            <FrameLayout
+            <ImageButton
                 android:id="@+id/btnPizza"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Pizza"
+                android:background="@drawable/rounded_button_background"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:src="@drawable/pizza_menus" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_background" />
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_marginTop="10dp"
-                app:layout_constraintEnd_toEndOf="@id/constraintParent"
-                app:layout_constraintStart_toStartOf="@id/constraintParent"
-                app:layout_constraintTop_toBottomOf="@id/btnCafe">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PIZZA"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
 
-                <!-- Imagen de fondo como ImageButton -->
-                <ImageButton
-                    android:id="@+id/bPizza"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:contentDescription="@string/menu_pizza"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/pizza_menus" />
+        <!-- Categoría: Wings -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
 
-                <TextView
-                    android:id="@+id/pizza"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Pizzas"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
-            <!-- Botón Alitas -->
-            <FrameLayout
-                android:id="@+id/btnAlitas"
+            <ImageButton
+                android:id="@+id/btnWings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Wings"
+                android:background="@drawable/rounded_button_background"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:src="@drawable/alitas_menus" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_background" />
+
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_marginTop="10dp"
-                app:layout_constraintEnd_toEndOf="@id/constraintParent"
-                app:layout_constraintStart_toStartOf="@id/constraintParent"
-                app:layout_constraintTop_toBottomOf="@id/btnPizza">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ALITAS"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
 
-                <!-- Texto superpuesto -->
-                <ImageButton
-                    android:id="@+id/btnAlitasImage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:contentDescription="@string/menu_alitas"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/alitas_menus" />
+        <!-- Categoría: Hamburguesa -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
 
-                <TextView
-                    android:id="@+id/txtAlitas"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Alitas"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
-
-            <FrameLayout
+            <ImageButton
                 android:id="@+id/btnHamburguesa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Hamburguesa"
+                android:background="@drawable/rounded_button_background"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:src="@drawable/hamburguesa_menus" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_background" />
+
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_marginTop="10dp"
-                app:layout_constraintEnd_toEndOf="@id/constraintParent"
-                app:layout_constraintStart_toStartOf="@id/constraintParent"
-                app:layout_constraintTop_toBottomOf="@id/btnAlitas">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="HAMBURGUESA"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
 
-                <ImageButton
-                    android:id="@+id/bHamburguesa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:contentDescription="@string/menu_hamburguesa"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/hamburguesa_menus" />
+        <!-- Categoría: Cerveza -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
 
-                <TextView
-                    android:id="@+id/txtHamburguesa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Hamburguesas"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
+            <ImageButton
+                android:id="@+id/btnPCervezas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Cerveza"
+                android:background="@drawable/rounded_button_background"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:src="@drawable/cerveza_menus" />
 
-            <FrameLayout
-                android:id="@+id/bPostre"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_background" />
+
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_marginTop="10dp"
-                app:layout_constraintEnd_toEndOf="@id/constraintParent"
-                app:layout_constraintStart_toStartOf="@id/constraintParent"
-                app:layout_constraintTop_toBottomOf="@id/btnHamburguesa">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CERVEZA"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
 
-                <!-- Imagen de fondo como ImageButton -->
-                <ImageButton
-                    android:id="@+id/btnPostre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:contentDescription="@string/menu_bebidas"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/postre_menus" />
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
 
-                <TextView
-                    android:id="@+id/txtPostre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Postres"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
-            
-            <FrameLayout
-                android:id="@+id/bCerveza"
+            <ImageButton
+                android:id="@+id/btnPostre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Postre"
+                android:background="@drawable/rounded_button_background"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:src="@drawable/postre_menus" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_background" />
+
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_marginTop="10dp"
-                app:layout_constraintEnd_toEndOf="@id/constraintParent"
-                app:layout_constraintStart_toStartOf="@id/constraintParent"
-                app:layout_constraintTop_toBottomOf="@id/btnHamburguesa">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="POSTRE"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
 
-                <!-- Imagen de fondo como ImageButton -->
-                <ImageButton
-                    android:id="@+id/btnPCervezas"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:contentDescription="@string/menu_bebidas"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/bebida_menus" />
 
-                <TextView
-                    android:id="@+id/txtBebidas"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Bebidas"
-                    android:textColor="@android:color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </FrameLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Puedes añadir las demás categorías aquí (Beer, Burger, Dessert) -->
 
-    </ScrollView>
+    </androidx.gridlayout.widget.GridLayout>
 
     <LinearLayout
         android:id="@+id/fab_menu"
@@ -309,7 +319,7 @@
             android:contentDescription="Opción 2"
             android:backgroundTint="#BEBAB6"
             app:tint="@color/white"
-            app:srcCompat="@drawable/baseline_table_bar_24" />
+            app:srcCompat="@drawable/baseline_local_florist_24" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_option5"
