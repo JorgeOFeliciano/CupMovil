@@ -55,6 +55,11 @@
 
 
     //Producto_Alitas  hasta aqui
+    <string name="Producto_Alitas1">Alitas</string>
+    <string name="Producto_Alitas2">Pizza de Peperoni</string>
+    <string name="Producto_Alitas3">Tamaño del café</string>
+    <string name="Producto_Alitas4">Añadir a la bolsa</string>
+
 
 
     //Producto_Cafe
